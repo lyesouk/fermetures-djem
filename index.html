@@ -29,6 +29,35 @@ h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,5.1vw,67px);line-height:1.05;let
 footer{background:#1c1e1b;color:#c7c6bf;padding:30px 0;font-size:12px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:22px}.footer-brand img{width:175px;height:58px;object-fit:contain;background:var(--paper);padding:3px 8px}.footer-small{color:#999b94}
 @media(max-width:900px){nav{gap:16px}.nav>.button{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:76px 7vw 65px}.hero-photo{min-height:420px}.story{gap:40px}.story-photo{height:420px}}
 @media(max-width:680px){.wrap{width:calc(100% - 34px)}.topbar .wrap{font-size:10px}.nav{height:74px}.brand img{width:170px;height:58px}.menu-toggle{display:block}nav{display:none;position:absolute;top:74px;left:0;right:0;background:var(--paper);padding:20px 24px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}nav.open{display:flex}.hero-copy{padding:66px 24px 56px}.hero-photo{min-height:320px}.hero h1{font-size:43px}.hero-copy p{font-size:15px}.trust .wrap{grid-template-columns:1fr;gap:14px;padding:20px 0}.section{padding:72px 0}.product-grid,.story,.process-grid{grid-template-columns:1fr}.product-card{grid-template-rows:225px auto}.story-photo{height:340px;order:2}.story-copy{order:1}.story-points{gap:13px}.cta-inner{align-items:flex-start;flex-direction:column}.footer-row{align-items:flex-start;flex-direction:column}.footer-brand img{width:160px}}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 280px;
+}
+
+.contact-details a {
+  display: flex;
+  flex-direction: column;
+  color: #d2b18b;
+  border-bottom: 1px solid #6d604f;
+  padding-bottom: 10px;
+}
+
+.contact-details a span {
+  font-size: 11px;
+  color: #c4c2bb;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.contact-details a strong {
+  font-size: 20px;
+}
+
+.contact-details a:hover strong {
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -84,7 +113,20 @@ footer{background:#1c1e1b;color:#c7c6bf;padding:30px 0;font-size:12px}.footer-ro
  </div>
 </section>
 <section class="cta" id="contact">
- <div class="wrap cta-inner"><div><div class="kicker">Parlons de votre projet</div><h2>Vous avez un projet de fermeture ?</h2><p>Volet roulant, rideau métallique ou besoin d'une configuration particulière : échangeons sur votre besoin et les caractéristiques de votre installation.</p></div><span style="display:inline-block;color:#d2b18b;font-size:24px;font-weight:700;letter-spacing:.04em;border-bottom:1px solid #a77c4c;padding-bottom:8px">+ 33 6 52 48 68 20</span></div>
+ <div class="wrap cta-inner"><div><div class="kicker">Parlons de votre projet</div><h2>Vous avez un projet de fermeture ?</h2><p>Volet roulant, rideau métallique ou besoin d'une configuration particulière : échangeons sur votre besoin et les caractéristiques de votre installation.</p></div><div class="contact-details">
+  <a href="tel:+33652486820">
+    <span>Mobile</span>
+    <strong>06 52 48 68 20</strong>
+  </a>
+  <a href="tel:0141557046">
+    <span>Fixe</span>
+    <strong>01 41 55 70 46</strong>
+  </a>
+  <a href="mailto:contact@fermeturesdjem.com">
+    <span>Email</span>
+    <strong>contact@fermeturesdjem.com</strong>
+  </a>
+</div></div>
 </section>
 </main>
 <footer><div class="wrap footer-row"><div class="footer-brand"><img src="fermetures-djem-logo.jpg" alt="Fermetures Djem"></div><div>Volets roulants · Rideaux métalliques</div><div class="footer-small">© <span id="year"></span> Fermetures Djem</div></div></footer>
